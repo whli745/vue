@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue循环</title>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="static/vue.js"></script>
+</head>
+<body>
+    <ul id="app">
+		<li v-for="item in items">
+			{{item}}
+		</li>
+	</ul>
+	<script>
+		var app = new Vue({
+			el:"#app",
+			data:{
+				items: [
+					"张三","李四","王五"
+				]
+			}
+		})
+	</script>
+</body>
+</html>
